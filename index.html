@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Prototype 1</title>
+  </head>
+  <body>
+    <button type="button" class="btn btn-dark" id="darkmode">Dark Mode</button>
+    <div class="container">
+      <div class="row mt-5 mb-5">
+        <div class="col-12 col-md-8 offset-md-2">
+          <h1>The Ones That Never Rode</h1>
+          <h2>A People’s History of The Bay Area Rapid Transit</h2>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-2">
+          <h3>Journal</h3>
+          <p>Minerva Schools at KGI</p>
+          <h3>Author</h3>
+          <p>Qiqi Xu</p>
+          <h3>Abstract</h3>
+          <p>This is just one reflection of larger historical neglect by the BART planners and the city elites, as they were envisioning a very particular kind of downtown-centric and high-density urban future, local and non-rider communities were excluded. To understand how public transit impacts the urban experiences and development, we must take into consideration the perspectives of local and non-rider communities. The city-planners’ neglect of these populations, as evidenced in the case study of BART, led to a planning failure, and stemmed into  historiographical neglect that ultimately led to a flawed understanding of the history of public transit and its role in rewiring the city space.</p>
+        </div>
+      </div>
+
+
+      <div class="row mt-3">
+        <div class="col-4 col-md-4 offset-md-1">
+          <p>references<p>
+        </div>
+        <div class="col-8 col-md-6">
+          <p>
+            A year had gone by since the shimmering white cars with blue strips first started carrying passengers back and forth across the bay. As a staple of modernity, this scene fitted in city officials’ imagination of a cosmopolitan that is comparable to London, Paris and New York. Residents in the Bay Area would read on their newspaper about varied opinions on this hefty regional transportation initiative, and specifically, voices from the minority communities that are in stark contrast with city planners’ outlook of the future. Kids in the Mission would wake up to the sound of the train that constantly reminded them of their insignificance. They would play outside, in front of walls with “DERAIL B.A.R.T” painted on them. And perhaps before they noticed, a neighborhood of unique ethnic diversity that their working class parents used to enjoy living in would have disappeared as the city planners. This picture (Figure 1) appeared on San Francisco Bay Guardian in 1973 with an article title with strong dissatisfaction -- “BART: Forcing The Mission Underground.” For the Mission district, a neighborhood of working-class and ethnic diversity, the construction and operation of BART turned out to impose devastating impacts. People residing in the Mission district were working in the same neighborhood, and the advent of BART - along with the fancy facilities and rising property price that it implied - raised serious concerns of job loss.
+          </p>
+          <p>
+            This is just one reflection of larger historical neglect by the BART planners and the city elites, as they were envisioning a very particular kind of downtown-centric and high-density urban future, local and non-rider communities were excluded. To understand how public transit impacts the urban experiences and development, we must take into consideration the perspectives of local and non-rider communities. The city-planners’ neglect of these populations, as evidenced in the case study of BART, led to a planning failure, and stemmed into  historiographical neglect that ultimately led to a flawed understanding of the history of public transit and its role in rewiring the city space.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        $('button#darkmode').click(function() {
+          if ($(this).text() == 'Dark Mode') {
+            $(this).text('Light Mode');
+            $(this).removeClass('btn-dark');
+            $(this).addClass('btn-light');
+            $('body').addClass("night");
+          } else {
+            $(this).text('Dark Mode');
+            $(this).removeClass('btn-light');
+            $(this).addClass('btn-dark');
+            $('body').removeClass("night");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

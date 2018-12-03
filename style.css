@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:400,400i,700');
 
+#header {
+  background-color: white;
+  padding: 8px;
+  color: Black;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.3s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  z-index: 10;
+  border-bottom: solid;
+  border-color: lightgrey;
+}
+
+#header h1 {
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
 
@@ -27,9 +44,15 @@ p {
 
 }
 
+p.footnote {
+  font-size: 0.8rem;
+  letter-spacing: -0.2px;
+  line-height: normal;
+}
+
 #darkmode {
-  position: sticky;
-  top: 10px;
+  position: fixed;
+  bottom: 10px;
   left: 10px;
 }
 
@@ -40,4 +63,10 @@ body.night {
 
 .night h3 {
   color: #80a3e6;
+}
+
+.night #header {
+  background-color: #272b31;
+  color: #80a3e6;
+  border-color: darkgrey;
 }

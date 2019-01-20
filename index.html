@@ -25,21 +25,21 @@
         <div class="row mt-3 mb-1">
           <div class="col-12 col-md-8 offset-md-2" >
             <h1>The Ones That Never Rode</h1>
+            <h2 id="subtitle">A People’s History of The Bay Area Rapid Transit</h2>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="row mt-5 mb-5">
+      <!-- <div class="row mt-5 mb-5">
         <div class="col-12 col-md-8 offset-md-2">
           <h1>The Ones That Never Rode</h1>
-          <h2>A People’s History of The Bay Area Rapid Transit</h2>
         </div>
-      </div>
+      </div> -->
 
-      <div class="row">
-        <div class="col-12 col-md-6 offset-md-2">
+      <div class="row mt-2">
+        <div class="col-12 col-md-8 offset-md-2">
           <h3>Journal</h3>
           <p>Minerva Schools at KGI</p>
           <h3>Author</h3>
@@ -53,12 +53,12 @@
 
 
       <div class="row mt-3">
-        <div class="col-4 col-md-4 offset-md-1">
+        <div class="col-4 col-md-2">
           <p class='footnote'> 1. San Francisco Bay Guardian, November 15-28, 1973. accessed February 25, 2018,
             <a href="https://www.flickr.com/photos/walkingsf/23460507363/in/album-72157662307889059/">link</a>
             <p>
         </div>
-        <div class="col-8 col-md-6">
+        <div class="col-8 col-md-8">
           <p>
             A year had gone by since the shimmering white cars with blue strips first started carrying passengers back and forth across the bay. As a staple of modernity, this scene fitted in city officials’ imagination of a cosmopolitan that is comparable to London, Paris and New York. Residents in the Bay Area would read on their newspaper about varied opinions on this hefty regional transportation initiative, and specifically, voices from the minority communities that are in stark contrast with city planners’ outlook of the future. Kids in the Mission would wake up to the sound of the train that constantly reminded them of their insignificance. They would play outside, in front of walls with “DERAIL B.A.R.T” painted on them. And perhaps before they noticed, a neighborhood of unique ethnic diversity that their working class parents used to enjoy living in would have disappeared as the city planners. This picture (Figure 1) appeared on San Francisco Bay Guardian in 1973 with an article title with strong dissatisfaction -- “BART: Forcing The Mission Underground.” For the Mission district, a neighborhood of working-class and ethnic diversity, the construction and operation of BART turned out to impose devastating impacts. People residing in the Mission district were working in the same neighborhood, and the advent of BART - along with the fancy facilities and rising property price that it implied - raised serious concerns of job loss.
           </p>
@@ -116,12 +116,14 @@
       window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
           $('#header h1').css("fontSize", "20px");
           $('#header').css("border-width", "1px");
+          $('#subtitle').hide();
         } else {
           $('#header h1').css("fontSize", "50px");
           $('#header').css("border-width", "0px");
+          $('#subtitle').show();
         }
       }
     </script>

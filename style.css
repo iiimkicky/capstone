@@ -11,10 +11,16 @@
   z-index: 10;
   border-bottom: solid;
   border-color: lightgrey;
+  border-width: 0px;
 }
 
 #header h1 {
   transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  font-size: 50px;
+}
+
+#subtitle {
+  transition: 0.2s; 
 }
 
 body {
@@ -24,7 +30,6 @@ body {
 
 h1 {
   font-family: 'Lora', serif;
-
 }
 
 h2 {
